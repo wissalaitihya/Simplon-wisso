@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="challenge2.flowgorithm"/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 02:47:04 PM"/>
+        <attribute name="created" value="aHA7REVTS1RPUC01SFYxRUVBOzIwMjYtMDMtMDU7MDI6MTc6NDUgUE07MjU0Mw=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC01SFYxRUVBOzIwMjYtMDMtMDU7MDI6NDc6MDQgUE07MTsyNjQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age, price" type="Integer" array="False" size=""/>
+            <output expression="&quot;how old are you&quot;" newline="True"/>
+            <input variable="age"/>
+            <if expression="age&lt;12">
+                <then>
+                    <output expression="&quot;The price is 20DH , Special: Children's Menu included!&quot;" newline="False"/>
+                </then>
+                <else>
+                    <if expression="age&gt;=12 and age&lt;=18">
+                        <then>
+                            <output expression="&quot;price=40dh&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="age&gt;60">
+                                <then>
+                                    <output expression="&quot;price=30dh&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;60dh&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
