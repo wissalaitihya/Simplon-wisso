@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowgorithm1"/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 04:25:51 PM"/>
+        <attribute name="created" value="aHA7REVTS1RPUC01SFYxRUVBOzIwMjYtMDMtMDU7MDQ6MDQ6MjAgUE07MjUzNA=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC01SFYxRUVBOzIwMjYtMDMtMDU7MDQ6MjU6NTEgUE07MTsyNjQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cost, order" type="Integer" array="False" size=""/>
+            <declare name="student" type="Boolean" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <assign variable="cost" expression="10"/>
+            <assign variable="order" expression="6"/>
+            <assign variable="student" expression="false"/>
+            <assign variable="total" expression="order * cost"/>
+            <if expression="order &gt; 5">
+                <then>
+                    <assign variable="total" expression="total - order * 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="student">
+                <then>
+                    <assign variable="total" expression="total*0.8"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;your total bill: &quot;&amp; total &amp;&quot;dh&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
