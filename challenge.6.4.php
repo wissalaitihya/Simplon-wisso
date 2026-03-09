@@ -9,6 +9,7 @@
  }
  }
 
- multiplyNumbers(4,3) . "<br";
+ multiplyNumbers(4,3) . "   ";
  multiplyNumbers(4,"apple");
+
 ?>
