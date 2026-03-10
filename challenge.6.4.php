@@ -10,6 +10,6 @@
  }
 
  multiplyNumbers(4,3) . "   ";
- multiplyNumbers(4,"apple");
+ multiplyNumbers(4,"apple") ;
 
 ?>
