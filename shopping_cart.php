@@ -27,7 +27,7 @@ if(isset($_POST["item"])){
     <title>Shopping Cart</title>
 </head>
 <body>
-    <h2>Add to Cart: <?php echo count($_SESSION["cart"]);?>Items</h2>
+    <h2>Cart: <?php echo count($_SESSION["cart"]);?>Items</h2>
 <h3>Products :</h3>
 <form method="POST"> 
 <p>Phone</p>
