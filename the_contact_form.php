@@ -32,11 +32,11 @@ echo $error;
     <form method="post">
   name: <input type="text" name="name" value="<?php echo $name; ?>"><br>
   email: <input type="text" name="email" value="<?php echo $email; ?>"><?php if($error): ?>
-    <span style="color:red;"><?php echo $message; ?></span>
     <?php endif; ?><br>
   <label>message</label>
-  <textarea name ="message"><?php echo $message ?></textarea><br>
+  <textarea name ="message"><?php echo $message; ?></textarea><br>
 <button type="submit">Send</button>
+<span style="color:red;"><?php echo $message; ?></span>
 </form>
 </body>
 </html>
