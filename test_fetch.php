@@ -1,23 +1,19 @@
 <?php
+require "db.php";   
 
-require "(7)db.php";   // include the database connection
 
-$minPrice = 150;   // example variable
-
-$sql = "SELECT title FROM library_books WHERE price > :price";
-
+$title = "Learning PHP";
+$author = "John Smith";
+$price = 180;
+$sql = "INSERT INTO library_books (title, author, price)
+        VALUES (:title, :author, :price)";
 $stmt = $pdo->prepare($sql);
+$stmt->execute([
+    'title' => $title,
+    'author' => $author,
+    'price' => $price
+]);
 
-$stmt->execute(['price' => $minPrice]);
-
-$books = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+$id = $pdo->lastInsertId();
+echo "Success! Book added with ID: " . $id;
 ?>
-
-<ul>
-<?php
-foreach ($books as $book) {
-    echo "<li>" . $book['title'] . "</li>";
-}
-?>
-</ul>
