@@ -1,5 +1,5 @@
 <?php
-require "db.php";   
+require "(7)db.php";   
 
 
 $title = "Learning PHP";
